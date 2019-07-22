@@ -3,8 +3,6 @@ using Android.OS;
 using Android.Support.V7.App;
 using Android.Runtime;
 using Android.Widget;
-using SuperCanlendar;
-using Android.Content;
 
 namespace Assignment_1
 {
@@ -23,15 +21,7 @@ namespace Assignment_1
             Button about = FindViewById<Button>(Resource.Id.about);
             Button exit = FindViewById<Button>(Resource.Id.exit);
 
-            start.Click += (s, e) =>
-            {
-
-                Intent intent = new Intent(this, typeof(SecoundActivity));
-                StartActivity(intent);
-
-
-
-            };
+       
 
         }
 
