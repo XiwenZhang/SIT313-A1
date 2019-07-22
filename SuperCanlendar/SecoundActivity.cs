@@ -21,7 +21,7 @@ namespace SuperCanlendar
 
             // Create your application here
             SetContentView(Resource.Layout.secondly);
-
+             
         }
     }
 }
