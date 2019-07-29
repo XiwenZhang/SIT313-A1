@@ -15,3 +15,24 @@
 	- Save and loding file
 	
 + What I will do next week (Calendar, notes)
+
+
+
+
+#Week 3 25-29/7/2019
++Setting ListView of Notes Centre(4 Hrs)
+	-adapter setting
+	-layout setting
++Create Calendar activity(3 Hrs)
+	-Calendar design
+	-date pick
++Notes Page Created (3 Hrs)
+	-Create note pgae for edit
+	-Connect to Notes Centre
++ What did not work well
+	-Save data and load data
+	
++ What I will do next week
+	- Save and load 
+	- Some extra features
+
