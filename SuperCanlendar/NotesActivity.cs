@@ -17,9 +17,7 @@ namespace SuperCanlendar
     {
 
 
-        static readonly List<string> NoteTitle = new List<string>();
-        static readonly List<string> NoteDes = new List<string>();
-        static readonly List<string> NoteData = new List<string>();
+        
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -47,13 +45,11 @@ namespace SuperCanlendar
 
                  }else
                  {
-                     NoteTitle.Add(t);
-                     NoteDes.Add(d);
-                     NoteData.Add(datatext1);
-                     Intent i = new Intent(this, typeof(NoteCentreActivity));
-                     i.PutStringArrayListExtra("title", NoteTitle);
-                     i.PutStringArrayListExtra("des", NoteDes);
-                     i.PutStringArrayListExtra("data", NoteData);
+                    
+                     Intent i = new Intent(this, typeof(NoteCente));
+                     i.PutExtra("title", t);
+                     i.PutExtra("des", d);
+                     i.PutExtra("date", datatext1);
                      StartActivity(i);
 
 
