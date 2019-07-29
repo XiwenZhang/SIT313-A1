@@ -2,7 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background = "@drawable/background"
+    
+    >
 
    <RelativeLayout
        android:layout_width="match_parent"
@@ -50,12 +53,12 @@
         <Button
             android:layout_width="140dp"
             android:layout_height="40dp"
+            android:id="@+id/makenotes"
             android:layout_centerInParent="true"
             android:layout_centerVertical="true"
             android:text="Make Notes"
             android:textSize="15dp"
             android:textColor="@android:color/white"
-            android:id="@+id/about"
             android:background="@drawable/mystyle"
             
         />
@@ -80,7 +83,7 @@
             android:layout_centerVertical="true"
             android:text="Notes Centre"
             android:textSize="15dp"
-            android:id="@+id/exit"
+            android:id="@+id/centre"
             android:background="@drawable/mystyle"
             android:textColor="@android:color/white"
 
@@ -106,7 +109,7 @@
             android:layout_centerVertical="true"
             android:text="Exit"
             android:textSize="15dp"
-            android:id="@+id/Back"
+            android:id="@+id/back"
             android:background="@drawable/mystyle"
             android:textColor="@android:color/white"
 
