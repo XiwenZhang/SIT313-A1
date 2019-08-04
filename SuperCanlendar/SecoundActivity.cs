@@ -23,9 +23,14 @@ namespace SuperCanlendar
             Button Notes = FindViewById<Button>(Resource.Id.makenotes);
 
 
-            Notes.Click += (s ,e) =>
+            Notes.Click += (s, e) =>
             {
                 Intent intent = new Intent(this, typeof(Calendar));
+                StartActivity(intent);
+            };
+            Centre.Click += (s, e) =>
+            {
+                Intent intent = new Intent(this, typeof(NoteCente));
                 StartActivity(intent);
             };
 

@@ -20,7 +20,7 @@ namespace SuperCanlendar
         private LayoutInflater mInflater;
         public NoteAdapter(Activity context, List<Info> items)
         {
-            this.Notes = items;//获取传过来的数据
+            this.Notes = items;//get the data from Intent transmission
             this.Con = context;
             this.mInflater = LayoutInflater.From(context);
         }
@@ -48,14 +48,14 @@ namespace SuperCanlendar
             if (convertView == null)
             {
                 stuview = new StuView();
-                //我们要适配的控件所在的视图
+                //find the layout we need
                 convertView = mInflater.Inflate(Resource.Layout.Nadapter, null);
-                //绑定控件
+                //bound Controler
                 stuview.title = convertView.FindViewById<TextView>(Resource.Id.titleview);
                 stuview.date = convertView.FindViewById<TextView>(Resource.Id.dateview);
                 stuview.des = convertView.FindViewById<TextView>(Resource.Id.desview);
 
-                //设置控件要显示的文字
+                //setting the text of each textview
                 stuview.title.Text = Notes[position].Title;
                 stuview.date.Text = Notes[position].Date;
                 stuview.des.Text = Notes[position].Des;
@@ -67,7 +67,7 @@ namespace SuperCanlendar
             }
             return convertView;
         }
-        //定义一个容器来存放控件，注意要继承javaobject
+        //setting the control 
         public class StuView : Java.Lang.Object
         {
             public TextView title;
